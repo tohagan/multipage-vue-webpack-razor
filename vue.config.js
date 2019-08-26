@@ -11,8 +11,8 @@ fs.readdirSync(appBasePath).forEach(function(name) {
   var appMainJS = `${appBasePath}${name}/main.ts`; // entry point
   var outputHtml = `${name}.html`; // partial Head & Body
 
-  console.log(appMainJS);
-  console.log(outputHtml);
+  // console.log(appMainJS);
+  // console.log(outputHtml);
 
   if (fs.existsSync(appMainJS)) {
     pages[name] = {
@@ -41,14 +41,14 @@ module.exports = {
     }
   },
   transpileDependencies: [/[\\\/]node_modules[\\\/]quasar[\\\/]/],
-  pages,
-  chainWebpack: config => {
-    config
-      .plugin('copy')
-      .tap(args => {
-        // args = [{ template: './src/partial.html' }];
-        console.log('args=', JSON.stringify(args, null, 2));
-        return args
-      })
-    }
+  pages
+  // chainWebpack: config => {
+  //   config
+  //     .plugin('copy')
+  //     .tap(args => {
+  //       // args = [{ template: './src/partial.html' }];
+  //       console.log('args=', JSON.stringify(args, null, 2));
+  //       return args
+  //     })
+  //   }
 };
