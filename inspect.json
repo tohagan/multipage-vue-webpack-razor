@@ -1,23 +1,3 @@
-yarn run v1.16.0
-$ vue-cli-service inspect
-./src/apps/App1/main.ts
-App1.html
-./src/apps/App2/main.ts
-App2.html
-args= [
-  [
-    {
-      "from": "C:\\W\\_Protos\\VueMultipage-vue-webpack\\public",
-      "to": "C:\\W\\_Protos\\VueMultipage-vue-webpack\\dist",
-      "toType": "dir",
-      "ignore": [
-        ".DS_Store",
-        "C:\\W\\_Protos\\VueMultipage-vue-webpack\\src\\index.razor3.ejs",
-        "C:\\W\\_Protos\\VueMultipage-vue-webpack\\src\\index.razor3.ejs"
-      ]
-    }
-  ]
-]
 {
   mode: 'development',
   context: 'C:\\W\\_Protos\\VueMultipage-vue-webpack',
